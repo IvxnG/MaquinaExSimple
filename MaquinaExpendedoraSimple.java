@@ -34,6 +34,14 @@ public class MaquinaExpendedoraSimple {
         estacionDestino = "Madrid";
     }
     
+     /**
+     * Cambia el precio del billete
+     */
+    public int setPrecioDelBillete(int precioDelBillete) {
+        precioBillete = precioDelBillete;
+        return precioBillete;
+    }
+    
     /**
      * Devuelve el precio del billete
      */
@@ -56,10 +64,10 @@ public class MaquinaExpendedoraSimple {
     }
     
     /**
-     * Devuelve el precio del billete
+     * Devuelve el dinero acumulado
      */
-    public int dineroAcumulado() {
-        return totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual; 
+    public int getDineroAcumulado() {
+        return totalDineroAcumulado; 
     }
     
     /**
